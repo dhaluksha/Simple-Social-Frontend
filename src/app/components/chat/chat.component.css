@@ -1,0 +1,6 @@
+.chatRow{
+  position: relative;
+  bottom: 0 !important;
+  margin-bottom: 0px !important;
+  max-height: 700px !important;
+}

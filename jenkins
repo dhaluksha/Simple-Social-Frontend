@@ -1,0 +1,24 @@
+pipeline {
+  agent any
+    
+  tools {nodejs "node"}
+    
+  stages {
+            
+    stage('Build') {
+      steps {
+        bat 'npm install --force'
+
+      }
+    }  
+
+    stage('Run') {
+      steps {
+        bat 'START npm start'
+        input message: 'Click "Proceed" to continue'
+      }
+  }
+
+           
+  }
+}

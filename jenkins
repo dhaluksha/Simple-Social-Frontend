@@ -15,7 +15,7 @@ pipeline {
     stage('Run') {
       steps {
         bat 'START npm start'
-        input message: 'Click "Proceed" to continue'
+        input message: 'Stop pipeline'
       }
   }
 

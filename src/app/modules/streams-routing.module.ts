@@ -12,7 +12,7 @@ import { StreamsComponent } from '../components/streams/streams.component';
 import { ViewUserComponent } from '../components/view-user/view-user.component';
 import { AuthGuard } from '../services/auth.guard';
 
-const routes: Routes = [
+const routes: Routes = [ 
   { path: 'streams', component: StreamsComponent, canActivate: [AuthGuard] },
   { path: 'post/:id', component: CommentsComponent, canActivate: [AuthGuard] },
   { path: 'people', component: PeopleComponent, canActivate: [AuthGuard] },
